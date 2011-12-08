@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>RTter</title>
+    <script type="text/javascript" src="oauth_js/oauth.js"></script>
+    <script type="text/javascript" src="oauth_js/sha1.js"></script>
+    <script type="text/javascript" src="rtter.js"></script>
+</head>
+<body>
+
+    <form name="request" method="GET" onSubmit="consumer.signForm(this, document.etc)">
+        <input type="submit" value="Get Request Token"/><br/>
+            <input name="oauth_consumer_key"     type="text" size="64"/><br/>
+            <input name="oauth_signature_method" type="text"/>
+            <input name="oauth_timestamp"        type="hidden"/>
+            <input name="oauth_nonce"            type="hidden"/>
+            <input name="oauth_signature"        type="hidden"/>
+    </form>
+
+</body>
+</html>
